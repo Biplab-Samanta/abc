@@ -1,0 +1,203 @@
+
+.intro-section, .review-section, .features-section, .support-section, .usibility-section, .price-section{
+    background-color: #fdfdfe;
+    padding: 2rem 6rem;
+    border-bottom:0.06rem solid #d9d4d1 ;
+}
+.price-section{
+    border-bottom:0rem ;
+}
+.logo {  
+    display: none;
+    color: #181718;
+}
+.graph-area{
+    background: #fdfdfe;
+    padding: 3rem;
+    margin-top: -22.45rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    height: 23rem;  
+    transition: height .5s;
+    z-index: 1;
+}
+
+.graph-height{
+    max-height: 16rem;
+    transition: height .9s;
+    box-shadow: 1rem 1rem 2.5rem 0 rgb(63 20 115 / 5%);
+    z-index: 9;
+}
+.left-chart-box{
+    width: 75%;
+    display: block;
+}
+.right-chart-box{
+    width: 20%;
+    display: block;
+}
+.graph-chart{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* tab create [round] */
+.tab-area-wrap{
+    position: fixed;
+    top: 80%;
+    left: -0.25rem;
+    border-radius: 0 123rem 123rem 0;
+    z-index: 9;
+    overflow: hidden;
+}
+.tab-area-wrap a{
+    font-weight: 600;
+    color: rgb(98, 94, 94);
+}
+.tab-item.active-vstab{
+    position: relative;
+}
+.active-vstab a{
+    color: #181718;
+    transition: 0.2s all ease;
+    font-family: 'Montserrat', sans-serif;
+}
+.active-line {
+    position: absolute;
+    content: '';
+    height: 0.125rem;
+    right: -0.5rem;
+    background-color: #795b9d;
+    transition: .5s all ease-in-out;
+    z-index: -1;
+    width: 5rem;
+}
+.icon-part {
+    background: #795b9d;
+    color: #f9f8fb;
+    border-radius: 0 123rem 123rem 0;
+    height: 5.5rem;
+    width: 3.125rem;
+    text-align: left;
+    line-height: 5.35rem;
+    padding-left: 0.25rem;
+    z-index: 9;
+}
+.tab-item-wrap {
+    margin-left: -5rem;
+    border: 0.35rem solid hsla(0,0%,0%,.2);
+    background-clip: padding-box !important;
+    border-radius: 0 123rem 123rem 0;
+    background: #eee;
+    padding: 4rem 1rem 4rem 2rem;
+    transition: .4s all ease-in-out;
+    position: relative;
+    min-width: 15rem;
+}
+div#vs-reviews, div#vs-usibility {
+    margin-left: 1.5rem;
+}
+div#vs-introduction, div#vs-features {
+    margin-left: 2.9rem;
+}
+.tab-item {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+}
+.hide-side-nav{
+    transform: translate(-100%);
+}
+
+
+/* community page */
+.help-widget-wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 1.5rem;
+}
+.help-vendor{
+    border: 0.125rem solid transparent;
+    transition: 0.3s all ease;
+    border-radius: 0.25rem;
+    background: #fdfdfe;
+}
+.help-vendor:hover{
+    box-shadow: 0rem 1rem 2.5rem rgb(63 20 115 / 7%);
+}
+.help-vendor:hover h5{
+    color: #3f1473;
+}
+.help-vendor i {
+    color: #795b9d;
+}
+.post-card-wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    gap: 1.5rem;
+}
+.profile-card{
+    background: #fdfdfe;
+    border-radius: 0.25rem;
+    text-align: center;
+    position: relative;
+}
+.super-card{
+    box-shadow: 0rem 1rem 2.5rem rgb(63 20 115 / 7%);
+}
+ .super-con {
+    display: inline-flex;
+    background: linear-gradient(110deg, rgb(63, 20, 115) 0%, 25%, rgb(175 59 116) 50%, 75%, rgb(219 75 84) 100%);
+    color: #f9f8fb;
+    padding: 0.125rem 1rem;
+    line-height: 1.4;
+    border-radius: 0.25rem;
+    position: absolute;
+    top: 0.5rem;
+    white-space: nowrap;
+    right: 0.5rem;
+    font-size: 0.875rem;
+}
+.profile-image img{
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+.profile-image{
+    position: relative;
+}
+.profile-image::after {
+    position: absolute;
+    content: "";
+    background: #c0424a;
+    height: 1.25rem;
+    width: 1.25rem;
+    border-radius: 50%;
+    top: 6%;
+    left: 58%;
+    border: 0.25rem solid #fdfdfe;
+}
+.contribution-table-wrap {
+    overflow-x: scroll;
+}
+table.contribution-table{
+    border-collapse: initial;
+    border-spacing: 0 0.5rem;
+}
+table.contribution-table tr {
+    background: #fdfdfe;
+    position: relative;
+}
+table.contribution-table tr.highlight-row{
+    box-shadow: 0.06rem 0.5rem 0.625rem 0.06rem rgb(0 0 0 / 7%);
+    -webkit-box-shadow: 0.06rem 0.5rem 0.625rem 0.06rem rgb(0 0 0 / 7%); 
+}
+table.contribution-table tr:hover{
+    box-shadow: 0.06rem 0.5rem 0.625rem 0.06rem rgb(0 0 0 / 7%);
+    -webkit-box-shadow: 0.06rem 0.5rem 0.625rem 0.06rem rgb(0 0 0 / 7%); 
+}
+table.contribution-table tr td {
+    padding: 1rem;
+}
+td:has(.profile-image) {
+    width: 10%;
+}

@@ -1,0 +1,727 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- <link href="main.css" rel="stylesheet"> custom-css link -->
+    <link rel="stylesheet"
+        href="//multivendorx.com/wp-content/themes/multivendorx/assets/frontend/css/theme_style.css?ver=1.0.59">
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script src="//multivendorx.com/wp-content/themes/multivendorx/assets/frontend/js/frontend.js?ver=1.0.59"></script>
+
+
+    <!-- animattion purpose -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+
+    <title> MultivendorX graph</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark" id="mvxMenu">
+            <div class="container py-0 overflow-visible">
+                <a href="https://multivendorx.com/" class="navbar-brand mb-1"><img
+                        src="https://multivendorx.com/wp-content/themes/multivendorx/assets/frontend/img/multivendorx-header-logo.svg"
+                        height="38" width="156" alt="MultiVendorX"></a>
+                <button class="navbar-toggler border-0 order-xl-0 order-1" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="icon-hamburger"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-start" id="navbarOffcanvas" tabindex="-1"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel">&nbsp;</h5>
+                        <button type="button" class="btn-close text-reset float-end" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body align-items-center">
+                        <ul id="menu-header-menu" class="navbar-nav ">
+                            <li id="menu-item-143471"
+                                class="has-megamenu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-143471">
+                                <a href="#">Marketplaces</a>
+                                <ul class="sub-menu">
+                                    <li id="menu-item-147665"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-147665">
+                                        <a href="https://multivendorx.com/niche-marketplace/"><i
+                                                class="icon-niche-marketplace"></i>
+                                            <h6 class="h-semibold">Niche Marketplace</h6>
+                                            <p>Simple marketplace for people’s passion</p>
+                                        </a></li>
+                                    <li id="menu-item-143473"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-143473">
+                                        <a href="https://multivendorx.com/booking-marketplace/"><i
+                                                class="icon-booking-marketplace"></i>
+                                            <h6 class="h-semibold">Booking Marketplace</h6>
+                                            <p>Create a marketplace that accepts bookings.</p>
+                                        </a></li>
+                                    <li id="menu-item-143474"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-143474">
+                                        <a href="https://multivendorx.com/subscription-marketplace/"><i
+                                                class="icon-subscription-marketplace"></i>
+                                            <h6 class="h-semibold">Subscription Marketplace</h6>
+                                            <p>Create subscription boxes for customers.</p>
+                                        </a></li>
+                                    <li id="menu-item-143477"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-143477">
+                                        <a href="https://multivendorx.com/rental-marketplace/"><i
+                                                class="icon-rental-marketplace"></i>
+                                            <h6 class="h-semibold">Rental Marketplace</h6>
+                                            <p>A marketplace to rent out goods &amp; services.</p>
+                                        </a></li>
+                                    <li id="menu-item-143478"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-143478">
+                                        <a href="https://multivendorx.com/auction-marketplace/"><i
+                                                class="icon-auction-marketplace"></i>
+                                            <h6 class="h-semibold">Auction Marketplace</h6>
+                                            <p>Hold online auctions and close bidding deals.</p>
+                                        </a></li>
+                                </ul>
+                            </li>
+                            <li id="menu-item-13737"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-13737">
+                                <a href="https://multivendorx.com/features/">Features</a>
+                                <ul class="sub-menu">
+                                    <li id="menu-item-144635"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-144635">
+                                        <a href="https://multivendorx.com/compare-features/">Compare</a></li>
+                                </ul>
+                            </li>
+                            <li id="menu-item-143530"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-143530"><a
+                                    href="https://multivendorx.com/pricing/">Pricing</a></li>
+                            <li id="menu-item-143499"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-143499">
+                                <a href="https://multivendorx.com/contact-us/">Contact Us</a>
+                                <ul class="sub-menu">
+                                    <li id="menu-item-143500"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-143500">
+                                        <a href="https://multivendorx.com/custom-development/">Custom Development</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="menu-item-6469"
+                                class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-6469">
+                                <a href="https://multivendorx.com/support-forum/">Support</a>
+                                <ul class="sub-menu">
+                                    <li id="menu-item-143483"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-143483">
+                                        <a href="https://multivendorx.com/get-help/">Get Help</a></li>
+                                    <li id="menu-item-289"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-289">
+                                        <a href="https://multivendorx.com/support-forum/">Forum</a></li>
+                                    <li id="menu-item-34815"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34815">
+                                        <a href="https://wc-marketplace.github.io/rest-api-docs/">WCMp REST API Docs</a>
+                                    </li>
+                                    <li id="menu-item-4354"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4354">
+                                        <a href="https://multivendorx.com/third-party-themes/">Third Party Themes</a>
+                                    </li>
+                                    <li id="menu-item-1016"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-18 current_page_item menu-item-1016">
+                                        <a href="https://multivendorx.com/blog/" aria-current="page">Blog</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="order-xl-2 order-0 ms-auto">
+                    <ul class="align-items-center navbar-nav flex-sm-nowrap flex-row list-unstyle">
+                        <li class="mini-cart-wrap cart-link-outer">
+                            <a class="cart-contents cart-link" href="https://multivendorx.com/checkout/"
+                                title="View your shopping cart">
+                                <span class="icon-cart"></span>
+                                <small class="item-count">1</small>
+                            </a>
+                            <div class="widget_shopping_cart_content">
+
+                                <ul class="woocommerce-mini-cart cart_list product_list_widget ">
+                                    <li class="woocommerce-mini-cart-item mini_cart_item">
+                                        <a href="https://multivendorx.com/checkout/?remove_item=8e058cbad42464d4c53570889bd97cb9&amp;_wpnonce=b596f173c5"
+                                            class="remove remove_from_cart_button" aria-label="Remove this item"
+                                            data-product_id="143434"
+                                            data-cart_item_key="8e058cbad42464d4c53570889bd97cb9"
+                                            data-product_sku="">×</a> <a
+                                            href="https://multivendorx.com/product/multivendorx-pro/?attribute_pa_site-license=3-site-yearly">
+                                            <img width="500" height="500"
+                                                src="https://multivendorx.com/wp-content/uploads/woocommerce-placeholder-500x500.png"
+                                                class="woocommerce-placeholder wp-post-image" alt="Placeholder"
+                                                decoding="async"
+                                                srcset="https://multivendorx.com/wp-content/uploads/woocommerce-placeholder-500x500.png 500w, https://multivendorx.com/wp-content/uploads/woocommerce-placeholder-100x100.png 100w, https://multivendorx.com/wp-content/uploads/woocommerce-placeholder-700x700.png 700w, https://multivendorx.com/wp-content/uploads/woocommerce-placeholder-300x300.png 300w, https://multivendorx.com/wp-content/uploads/woocommerce-placeholder-1024x1024.png 1024w, https://multivendorx.com/wp-content/uploads/woocommerce-placeholder-150x150.png 150w, https://multivendorx.com/wp-content/uploads/woocommerce-placeholder-768x768.png 768w, https://multivendorx.com/wp-content/uploads/woocommerce-placeholder.png 1200w"
+                                                sizes="(max-width: 500px) 100vw, 500px">MultiVendorX Pro - 3 Site
+                                            License, Yearly Package </a>
+                                    </li>
+                                </ul>
+
+                                <p class="woocommerce-mini-cart__total total">
+                                    <strong>Subtotal:</strong> <span class="woocommerce-Price-amount amount"><bdi><span
+                                                class="woocommerce-Price-currencySymbol">$</span>399</bdi></span>
+                                </p>
+
+
+                                <p class="woocommerce-mini-cart__buttons buttons"><a
+                                        href="https://multivendorx.com/checkout/"
+                                        class="button checkout wc-forward wp-element-button">Checkout</a></p>
+
+
+
+                            </div>
+                        </li>
+                        <li class="menu-item menu-dropdown">
+
+
+                            <a href="#"><span class="icon-admin-profile"></span></a>
+
+                            <ul class="sub-menu">
+                                <li class="menu-item">
+                                    <a href="https://multivendorx.com/my-account/"><i class="fa fa-user"
+                                            aria-hidden="true"></i><span>My Account</span></a>
+                                </li>
+                                <li class="menu-item">
+                                    <a
+                                        href="https://multivendorx.com/wp-login.php?action=logout&amp;_wpnonce=539570fd08&amp;redirect_to=https%3A%2F%2Fmultivendorx.com%2Fpricing%2F%3Floggedout%3Dtrue"><i
+                                            class="fa fa-power-off" aria-hidden="true"></i><span>Logout</span></a>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item ms-3 d-none d-xl-block">
+                            <a class="btn btn-border px-3 "
+                                href="https://downloads.wordpress.org/plugin/dc-woocommerce-multi-vendor.zip">Download</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </nav>
+
+    </header>
+
+    <section class=" markectplace-page position-relative">
+        <div class="container">
+                <div class="row pb-5">
+                    <h1 class="entry-title text-center page-heading white-second-color mb-4 pb-2">
+                        <a class="font-white" href="https://multivendorx.com/blog/" rel="bookmark">Community</a>
+                    </h1>  
+             <p class="font-size-22 page-sub-heading text-center white-second-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, assumenda.</p>
+                 </div>
+        </div>
+    </section>
+
+
+    <main id="site-content" class="container-fluid">
+        <section class="support-card-section">
+            <div class="container pt-4">
+                <h2 class="text-center h-semibold mb-4">How To Get Support</h2>
+                <a href="#">
+                <div class="help-widget-wrap pt-lg-5">
+                    <div class=" help-vendor text-center py-5 px-3 img-shadow3">
+                    <i class="icon-live-chat fs-1"></i>
+                    <h5 class="mb-3 mt-4 h-semibold">  Knowladgebase </h5>
+                    </div>
+                </a>
+                <a href="#">
+
+                    <div class=" help-vendor text-center py-5 px-3 img-shadow3">
+                    <i class="icon-right-price fs-1"></i>
+                    <h5 class="mb-3 mt-4 h-semibold">FAQ Section</h5>
+                    </div>
+                </a>
+                <a href="#">
+
+                    <div class=" help-vendor text-center py-5 px-3 img-shadow3">
+                    <i class="icon-live-chat  fs-1"></i>
+                    <h5 class="mb-3 mt-4 h-semibold">Browse the Forum </h5>
+                    </div>
+                </a>             
+
+            </div>
+          
+        </section>
+<section>
+    <div class="container">
+        <div class="row text-center mb-5 pb-3 justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="text-capitalize mb-4"> <span class="h-semibold">
+                Community</span></h2>
+                <p class="font-size-22">
+                    It’s a one-stop marketplace solution that drives growth at every stage of business
+                </p>
+            </div>
+        </div>
+
+        <div class="row price-q-acr">
+            <div class="col-lg-10 mx-auto">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item img-shadow3">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                 <h6 class="h-semibold">
+                   
+                    How can I add enquiry option to my products?
+                  
+                  </h6> 
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>
+                       To add enquiry option to the products, all you have to do is, enable the catalog mode via WooCommerce then go to  WC Catalog Enquiry's General Setting page. (see the screenshot – https://prnt.sc/puizez ).
+                    </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item img-shadow3">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <h6 class="h-semibold">
+                      
+                    Can I add enquiry options for multiple products into the site?
+                  
+                      </h6> 
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>
+                     To add enquiry button for multiple products into the site, you have to enable “Catalog Multiple Product Enquiry” via WooCommerce &gt;&gt; WC Catalog Enquiry &gt;&gt; General (see the screenshot – https://prnt.sc/puj0d1 ). 
+                    </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item img-shadow3">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <h6 class="h-semibold">
+                       
+                     I want to have both" Add to Cart" and "Enquiry" option available in my products?
+                  
+                      </h6> 
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>
+                       To have both “Add To Cart” and “Enquiry” option available in my products, all you have to do is enable “Add To Cart” button via WooCommerce &gt;&gt; WC Catalog Enquiry &gt;&gt; General (see the screenshot – https://prnt.sc/puj1e2 ).
+                    </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item img-shadow3">
+                <h2 class="accordion-header" id="headingfour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapseThree">
+                    <h6 class="h-semibold">                            
+                   
+                    I don't want to show the product's price to my customer.I will only share the product details with my customer
+                  
+                  
+                      </h6> 
+                  </button>
+                </h2>
+                <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>
+                       To hide the product price from the products, all you have to do is, enable “Remove Price” via WooCommerce &gt;&gt; WC Catalog Enquiry &gt;&gt; General (see the screenshot – https://prnt.sc/puj2hx )
+                    </p>
+                  </div>
+                </div>
+              </div>
+            
+             <div class="accordion-item img-shadow3">
+                <h2 class="accordion-header" id="headingfive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapseThree">
+                    <h6 class="h-semibold">                            
+                   
+                    How can I add custom fields to the product enquiry form?
+                  
+                  
+                      </h6> 
+                  </button>
+                </h2>
+                <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>
+                       You can add custom fields to the product enquiry form via WooCommerce &gt;&gt; WC Catalog Enquiry &gt;&gt; Enquiry Form (see the screenshot – https://prnt.sc/puj3fk )
+                    </p>
+                  </div>
+                </div>
+            </div>
+            
+             <div class="accordion-item img-shadow3">
+                <h2 class="accordion-header" id="headingsix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapseThree">
+                    <h6 class="h-semibold">                            
+                   
+                    Can the customer's enquiry main be sent to any other email address except admin and vendor
+                  
+                  
+                      </h6> 
+                  </button>
+                </h2>
+                <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>
+                      Yes, to send the customer’s enquiry email to another email address except admin and vendor, all you have to do is, just add the email address via “Enquiry Mail Override Section” via WooCommerce &gt;&gt; WC Catalog Enquiry &gt;&gt; General (see the screenshot – https://prnt.sc/pvtstp )
+                    </p>
+                  </div>
+                </div>
+            </div>
+
+          </div>
+        </div>
+    </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+        <div class="row text-center mb-5 pb-3 justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="text-capitalize mb-4"> <span class="h-semibold">
+                LeaderBoard</span></h2>
+                <p class="font-size-22">
+                    It’s a one-stop marketplace solution that drives growth at every stage of business
+                </p>
+            </div>
+        </div>
+
+        <div class="post-card-wrap col-lg-10 mx-auto">
+            <div class="profile-card py-5">
+                <div class="profile-image">
+                    <img src="https://multivendorx.com/wp-content/themes/multivendorx/assets/frontend/img/owner-pickflick.webp" alt="profile-person">
+                </div>
+                <h5>Michel Morter</h5>
+                <p class="mb-4">Developer</p>
+                <div class="contribution-item d-flex justify-content-between text-center px-5 pt-4 border-top">
+                    <div class="con-text">
+                        <h4 class="h-semibold m-0">418+</h4>
+                        <p>Products</p>
+                      </div>
+                      <div class="con-text">
+                        <h4 class="h-semibold m-0">51+</h4>
+                        <p>Contributions</p>
+                      </div>
+                </div>
+            </div>
+            <div class="profile-card super-card py-5">
+                <div class="profile-image">
+                    <img src="https://multivendorx.com/wp-content/themes/multivendorx/assets/frontend/img/jorge-monleon-hidalgo.webp" alt="profile-person">
+                </div>
+                <h5>Michel Morter</h5>
+                <p class="mb-4">Developer</p>
+                <p class="super-con">Most Attractive</p>
+                <div class="contribution-item d-flex justify-content-between text-center px-5 pt-4 border-top">
+                    <div class="con-text">
+                        <h4 class="h-semibold m-0">418+</h4>
+                        <p>Products</p>
+                      </div>
+                      <div class="con-text">
+                        <h4 class="h-semibold m-0">51+</h4>
+                        <p>Contributions</p>
+                      </div>
+                </div>
+            </div>
+            <div class="profile-card py-5">
+                <div class="profile-image">
+                    <img src="https://multivendorx.com/wp-content/themes/multivendorx/assets/frontend/img/rares-nicolae-lunca.webp" alt="profile-person">
+                </div>
+                <h5>Michel Morter</h5>
+                <p class="mb-4">Developer</p>
+                <div class="contribution-item d-flex justify-content-between text-center px-5 pt-4 border-top">
+                    <div class="con-text">
+                        <h4 class="h-semibold m-0">418+</h4>
+                        <p>Products</p>
+                      </div>
+                      <div class="con-text">
+                        <h4 class="h-semibold m-0">51+</h4>
+                        <p>Contributions</p>
+                      </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+
+        <div class="contribution-wrap pt-5 mt-3 col-lg-10 mx-auto">
+            <h4 class="h-semibold mb-3">Contribution</h4>
+            <div class="contribution-table-wrap">
+                <table class="contribution-table w-100 text-center">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label class="">
+                                    <input type="checkbox" >
+                                  </label>
+                            </td>
+                            <td>
+                                <div class="profile-image">
+                                    <img src="https://multivendorx.com/wp-content/themes/multivendorx/assets/frontend/img/rares-nicolae-lunca.webp" alt="profile-person" width="45" class="img-fluid m-0">
+                                </div>
+                            </td>
+                            <td>   Michel Morter
+                               
+                            </td>
+                            <td> Developer</td>
+                            <td>
+                                +48,52,322
+                            </td>
+                            <td>
+                                48+
+                            </td>
+
+                        </tr>
+
+                       <tr>
+                            <td>
+                                <label class="">
+                                    <input type="checkbox" >
+                                  </label>
+                            </td>
+                            <td>
+                                <div class="profile-image">
+                                    <img src="https://multivendorx.com/wp-content/themes/multivendorx/assets/frontend/img/rares-nicolae-lunca.webp" alt="profile-person" width="45" class="img-fluid m-0">
+                                </div>
+                            </td>
+                            <td>   Michel Morter
+                               
+                            </td>
+                            <td> Developer</td>
+                            <td>
+                                +48,52,322
+                            </td>
+                            <td>
+                                48+
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="">
+                                    <input type="checkbox" >
+                                  </label>
+                            </td>
+                            <td>
+                                <div class="profile-image">
+                                    <img src="https://multivendorx.com/wp-content/themes/multivendorx/assets/frontend/img/rares-nicolae-lunca.webp" alt="profile-person" width="45" class="img-fluid m-0">
+                                </div>
+                            </td>
+                            <td>   Michel Morter
+                               
+                            </td>
+                            <td> Developer</td>
+                            <td>
+                                +48,52,322
+                            </td>
+                            <td>
+                                48+
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="">
+                                    <input type="checkbox" >
+                                  </label>
+                            </td>
+                            <td>
+                                <div class="profile-image">
+                                    <img src="https://multivendorx.com/wp-content/themes/multivendorx/assets/frontend/img/rares-nicolae-lunca.webp" alt="profile-person" width="45" class="img-fluid m-0">
+                                </div>
+                            </td>
+                            <td>   Michel Morter
+                               
+                            </td>
+                            <td> Developer</td>
+                            <td>
+                                +48,52,322
+                            </td>
+                            <td>
+                                48+
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="">
+                                    <input type="checkbox" >
+                                  </label>
+                            </td>
+                            <td>
+                                <div class="profile-image">
+                                    <img src="https://multivendorx.com/wp-content/themes/multivendorx/assets/frontend/img/rares-nicolae-lunca.webp" alt="profile-person" width="45" class="img-fluid m-0">
+                                </div>
+                            </td>
+                            <td>   Michel Morter
+                               
+                            </td>
+                            <td> Developer</td>
+                            <td>
+                                +48,52,322
+                            </td>
+                            <td>
+                                48+
+                            </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        </div>
+        </section>
+
+        <section class="support-card-section">
+            <div class="container">
+                <h2 class="text-center h-semibold mb-4">How You can Support</h2>
+                
+                <div class="help-widget-wrap pt-lg-5">
+                    <div class=" help-vendor text-center py-5 px-3 img-shadow3">
+                    <i class="icon-live-chat fs-1"></i>
+                    <h5 class="mb-3 mt-4 h-semibold">  Handicrafts &amp; Handmade Goods </h5>
+                    <p class="px-3">If not for the beauty, but for the sentimental value and hard work that goes into them, handicrafts are products that are treasured over ages. So, why not be a carrier of these beautiful emotions?.</p>
+                    </div>
+                
+                
+
+                    <div class=" help-vendor text-center py-5 px-3 img-shadow3">
+                    <i class="icon-live-chat fs-1"></i>
+                    <h5 class="mb-3 mt-4 h-semibold">Handloom Fabrics</h5>
+                    <p class="px-3">If not for the beauty, but for the sentimental value and hard work that goes into them, handicrafts are products that are treasured over ages. So, why not be a carrier of these beautiful emotions?.</p>
+                    </div>
+                
+                
+
+                    <div class=" help-vendor text-center py-5 px-3 img-shadow3">
+                    <i class="icon-live-chat fs-1"></i>
+                    <h5 class="mb-3 mt-4 h-semibold">  Toys &amp; Kids Supplies </h5>
+                    <p class="px-3">If not for the beauty, but for the sentimental value and hard work that goes into them, handicrafts are products that are treasured over ages. So, why not be a carrier of these beautiful emotions?.</p>
+                    </div>
+                             
+
+            </div>
+          
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container pt-5">
+            <div class="row px-4">
+                <div class="col-lg-4 col-md-10 col-10 mx-auto text-lg-start text-center mt-5">
+                    <div><a class="navbar-brand" href="https://multivendorx.com/"><img
+                                src="https://multivendorx.com/wp-content/themes/multivendorx/assets/frontend/img/multivendorx-footer-logo.svg"
+                                class="img-fluid" alt="logo" height="38" width="156"></a></div>
+                    <p class="footer-description mt-4 pe-lg-5"><em>The Growth Engine To Start Your Marketplace</em></p>
+                </div>
+                <div class=" mt-5 col-lg-2 col-md-6 col-6 ">
+                    <h5 class="mb-4 h-semibold">Quick Links</h5>
+                    <div class="menu-footer-menu-container">
+                        <ul id="menu-footer-menu" class="footer-menu">
+                            <li id="menu-item-143509"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-143509"><a
+                                    href="https://multivendorx.com/about-us/">About Us</a></li>
+                            <li id="menu-item-31947"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-31947">
+                                <a href="https://multivendorx.com/privacy-policy/">Privacy Policy</a></li>
+                            <li id="menu-item-143507"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-143507"><a
+                                    href="https://multivendorx.com/how-to-get-support/">Support Policy</a></li>
+                            <li id="menu-item-145747"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145747"><a
+                                    href="https://multivendorx.com/terms-and-conditions/">Terms And Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" mt-5 pe-lg-4 pe-0 col-lg-3 col-md-6  col-6">
+                    <h5 class="mb-4 h-semibold">Contact Us</h5>
+                    <section id="text-5" class="widget widget_text">
+                        <div class="textwidget">
+                            <p class="mb-3">MultiVendorX,<br>
+                                Module #534, Sector V<br>
+                                Salt Lake City, Kolkata, India</p>
+                            <p class="mb-3">contact@wc-marketplace.com</p>
+                            <p>Have questions?<a href="https://multivendorx.com/support-forum/" class="a-underline"> Ask
+                                    here</a></p>
+                        </div>
+                    </section>
+                </div>
+                <div class="mt-5 col-lg-3 col-md-10 col-10 mx-auto">
+                    <h5 class="mb-4 h-semibold">Subscribe to Our Blog</h5>
+                    <p class="mb-3">We promise, we won't spam you!!</p>
+                    <!-- Begin Mailchimp Signup Form -->
+                    <div id="mc_embed_signup">
+                        <form
+                            action="https://wc-marketplace.us14.list-manage.com/subscribe/post?u=e487dbbea06081e24d2df621a&amp;id=65313b2445"
+                            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                            class="validate" target="_blank" novalidate="">
+                            <div id="mc_embed_signup_scroll">
+                                <!-- <input type="email" value="" name="EMAIL" class="email textField-inputCls" id="mce-EMAIL" placeholder="Email Address" required> -->
+                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                <div aria-hidden="true" class="footer-email pb-2"><input type="email"
+                                        name="b_e487dbbea06081e24d2df621a_65313b2445" tabindex="-1" value=""
+                                        class="form-control" placeholder="Email Address"></div>
+                                <div class="clear "><input type="submit" value="Subscribe" name="subscribe"
+                                        id="mc-embedded-subscribe" class="btn btn-red px-4"> </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!--End mc_embed_signup-->
+                </div>
+            </div>
+        </div>
+        <div class="container  py-0">
+            <p class="copy-write pt-2 pb-3">© 2022 MultiVendorX. All Rights Reserved.</p>
+        </div>
+        <div class="scroll-top visible" id="topbtn">
+            <div class="icon-top-arrow fs-5">
+            </div>
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar" style="width: 99.6342%;"></div>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+
+
+
+    </script>
+    <!-- demo create link -->
+    <link rel="stylesheet" href="graph-css.css"> <!--custom css-->
+    <script src="graph.js"></script>  <!--custom js-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+</body>
+
+</html>
