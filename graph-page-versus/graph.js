@@ -75,6 +75,7 @@ jQuery(document).ready( function ($) {
         else {
        	 $(".graph-area").removeClass('graph-height');
        	 $(".tab-area-wrap").css({"top": "80%", "color": "#d1d4d9"});  
+       	 $(".right-chart-box").css({"height": "10rem"});  
 
        	}
 
@@ -324,12 +325,7 @@ const rat = document.getElementById('feature-rate-chart');
 
 });
 
-   //community page ------
-$(function() {
-  $('td:first-child input').change(function() {
-    $(this).closest('tr').toggleClass("highlight-row", this.checked);
-  });
-});
+
 
 
  

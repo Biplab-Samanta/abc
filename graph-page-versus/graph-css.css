@@ -42,6 +42,12 @@
     object-fit: cover;
     object-position: center;
 }
+.graph-wrap{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
 
 
 /* tab create [round] */
@@ -203,3 +209,9 @@ table.contribution-table tr td {
 td:has(.profile-image) {
     width: 10%;
 }
+
+@media screen and (max-width: 992px) {
+    .right-chart-box, .left-chart-box {
+        width: 100%;
+    }
+  }
