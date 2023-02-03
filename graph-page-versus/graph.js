@@ -142,85 +142,183 @@ $(function(){
     }
   });
 
-
-
-
 //2nd chart----------
+const rev = document.getElementById('review-chart');
 
-const ctx2 = document.getElementById('review-chart').getContext('2d');
-    gradient = ctx2.createLinearGradient(0, 0, 0, 450);
-            // gradient.addColorStop(0, '#db4b54');
-            gradient.addColorStop(0.1, '#3f1473');
-            gradient.addColorStop(0.4, '#db4b54');
-
-  new Chart(ctx2, {
-    type: 'bar',
-    data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-      datasets: [{
-        label: 'Mvx',
-        data: [20, 105, 5, 16, 12, 3],
-        backgroundColor: gradient,
-        borderWidth:0,
-        tension:0.4,
-        fill:true,
-      },{
-        label: 'wcfm',
-        data: [10, 9, 300, 11, 2, 3],
-        backgroundColor: "#ebe7f0",
-        borderWidth:0,
-        tension:0.4,
-        fill:true,
-      }
-    ]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-        scales: {
-          y: {
-            beginAtZero: false
-          }
-        }
+new Chart(rev, {
+  type: 'line',
+  data: {
+    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    datasets: [{
+      label: 'Mvx',
+      data: [20, 15, 50, 160, 12, 3],
+      backgroundColor: gradient,
+      borderWidth:0,
+      tension:0.4,
+      fill:true,
+    },{
+      label: 'wcfm',
+      data: [12, 90, 30, 14, 2, 3],
+      backgroundColor: "#ebe7f0",
+      borderWidth:0,
+      tension:0.4,
+      fill:true,
     }
-  });
+  ]
+  },
+  options: {
+    maintainAspectRatio: false,
+    responsive: true,
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+
+// 2nd right chart-------
+var value = 90;
+var circleDegrees = 290;
+
+
+var myConfig = {
+ 	type: "gauge",
+ 	globals: {
+ 	  fontSize: 25
+ 	},
+ 	plot:{
+ 	  size:'100%',
+ 	  valueBox: {
+ 	    placement: 'center',
+ 	    text:'%v', //default
+ 	    fontSize:30,
+ 	    // rules:[
+      //   {
+ 	    //     rule: '%v < 80',
+ 	    //     text: '%v MB'
+ 	    //   },
+ 	    //   {
+ 	    //     rule: '%v >= 80',
+ 	    //     text: '%v<br>Threshold<br>reached'
+ 	    //   },
+      //   {
+ 	    //     rule: '%v >= 100',
+ 	    //     text: 'Exhausted'
+ 	    //   }
+ 	    // ]
+ 	  }
+ 	},
+ 	scaleR:{
+	  aperture:circleDegrees,
+	  minValue:0,
+	  maxValue:100,
+	  step:1,
+	  center:{
+	    visible:false
+	  },
+	  tick:{
+	    visible:false
+	  },
+	  item:{
+      visible: false,
+	  },
+	  ring:{
+	    size:20,
+	    rules:[
+        {
+	        rule:'%v < '+value+'',
+	        backgroundColor:'#3f1473'
+          // backgroundColor: gradient,
+	      }
+	    ]
+	  }
+ 	},
+	series : [
+		{
+			values : [value], // starting value
+			backgroundColor:'#9e3568',
+	    indicator:[5,2,5,9,.7],
+	    animation:{  
+        effect:2,
+        method:4,
+        sequence:4,
+        speed: 2000
+     }
+		}
+	]
+};
+
+zingchart.render({ 
+	id : 'myChart', 
+	data : myConfig,
+	height: 150, 
+	width: '100%'
+});
+
+
+
+
+
+
 
 //3rd chart----------
-const cty = document.getElementById('feature-chart').getContext('2d');
-    gradient = cty.createLinearGradient(0, 0, 0, 450);
-            // gradient.addColorStop(0, '#db4b54');
-            gradient.addColorStop(0.1, '#3f1473');
-            gradient.addColorStop(0.4, '#db4b54');
+const ui = document.getElementById('feature-chart');
 
-  new Chart(cty, {
+new Chart(ui, {
+  type: 'bar',
+  data: {
+    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    datasets: [{
+      label: 'Mvx',
+      data: [20, 15, 50, 160, 12, 3],
+      backgroundColor: gradient,
+      borderWidth:0,
+      tension:0.4,
+      fill:true,
+    },{
+      label: 'wcfm',
+      data: [12, 90, 30, 14, 2, 3],
+      backgroundColor: "#ebe7f0",
+      borderWidth:0,
+      tension:0.4,
+      fill:true,
+    }
+  ]
+  },
+  options: {
+    maintainAspectRatio: false,
+    responsive: true,
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+//3rd right chart----------
+
+const rat = document.getElementById('feature-rate-chart');
+
+  new Chart(rat, {
     type: 'doughnut',
     data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      labels: ['Red', 'Blue'],
       datasets: [{
-        label: 'Mvx',
-        data: [20, 105, 5, 16, 12, 3],
-        backgroundColor: gradient,
-        borderWidth:0,
-        tension:0.4,
-        fill:true,
-      },{
-        label: 'wcfm',
-        data: [10, 9, 300, 11, 2, 3],
-        backgroundColor: "#ebe7f0",
-        borderWidth:0,
-        tension:0.4,
-        fill:true,
-      }
-    ]
+        label: '# of Votes',
+        data: [25, 9],
+        borderWidth: 1,
+        backgroundColor:['#3f1473', '#ebe7f0']
+      }]
     },
     options: {
       responsive: true,
       maintainAspectRatio: false,
-        scales: {
-          y: {
-            beginAtZero: false
-          }
+      scales: {
+        y: {
+          beginAtZero: true
         }
+      }
     }
   });
 

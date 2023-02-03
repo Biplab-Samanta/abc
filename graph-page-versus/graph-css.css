@@ -34,6 +34,7 @@
 .right-chart-box{
     width: 20%;
     display: block;
+    height: 10rem;
 }
 .graph-chart{
     height: 100%;
@@ -41,6 +42,7 @@
     object-fit: cover;
     object-position: center;
 }
+
 
 /* tab create [round] */
 .tab-area-wrap{
