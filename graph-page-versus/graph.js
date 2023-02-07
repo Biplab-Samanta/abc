@@ -106,26 +106,32 @@ $(function(){
 
  
     var ctx = document.getElementById('intro-chart').getContext('2d');
+    gradient2 = ctx.createLinearGradient(0, 0, 0, 450);
+          gradient2.addColorStop(0.1, '#3f1473');
+          gradient2.addColorStop(0.4, '#db4b54');
+
     gradient = ctx.createLinearGradient(0, 0, 0, 450);
-            // gradient.addColorStop(0, '#db4b54');
-            gradient.addColorStop(0.1, '#3f1473');
-            gradient.addColorStop(0.4, '#db4b54');
+            gradient.addColorStop(0.1, '#3f147312');
+            gradient.addColorStop(0.28, '#db4b5400');
+            gradient.addColorStop(0.9, '#db4b5400');
 
   new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      labels: ['Support', 'Features', 'Reveiw'],
       datasets: [{
         label: 'Mvx',
-        data: [20, 15, 5, 16, 12, 3],
-        backgroundColor: gradient,
+        data: [2, 15, 5],
+        backgroundColor: gradient2,
+       borderColor:'#3f1473',
         borderWidth:0,
         tension:0.4,
         fill:true,
       },{
         label: 'wcfm',
-        data: [12, 9, 3, 14, 2, 3],
+        data: [5, 12, 3],
         backgroundColor: "#ebe7f0",
+      borderColor:'#db4b54',
         borderWidth:0,
         tension:0.4,
         fill:true,
@@ -139,7 +145,42 @@ $(function(){
           y: {
             beginAtZero: true
           }
+        },
+        hover: { 
+          mode: null
+        },
+        tooltips: {
+          backgroundColor:"#f9f8fb",
+          titleColor:"#181718",
+          bodyColor:"#181718",
+        },
+    }
+  });
+  // 1st chart right
+  
+  const nnn = document.getElementById('overall-chart');
+
+  new Chart(nnn, {
+    type: 'doughnut',
+    data: {
+      labels: ['Mvx', 'Wcfm'],
+      datasets: [{
+        label: 'compare over all',
+        data: [98, 20],
+        borderWidth: 1,
+        backgroundColor: [
+          'rgb(255, 99, 132)',
+          'rgb(54, 162, 235)',
+          'rgb(255, 205, 86)'
+        ],
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
         }
+      }
     }
   });
 
@@ -149,113 +190,43 @@ const rev = document.getElementById('review-chart');
 new Chart(rev, {
   type: 'line',
   data: {
-    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    labels: ['2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'],
     datasets: [{
       label: 'Mvx',
-      data: [20, 15, 50, 160, 12, 3],
+      data: [20, 15, 50, 160, 12, 300, 140, 260],
       backgroundColor: gradient,
-      borderWidth:0,
+      borderColor:'#3f1473',
+      borderWidth:2,
       tension:0.4,
       fill:true,
     },{
       label: 'wcfm',
-      data: [12, 90, 30, 14, 2, 3],
-      backgroundColor: "#ebe7f0",
-      borderWidth:0,
+      data: [12, 90, 30, 14, 20, 3, 15, 27],
+      backgroundColor: gradient,
+      borderColor:'#db4b54',
+      borderWidth:2,
       tension:0.4,
       fill:true,
     }
   ]
   },
   options: {
+    elements: {
+      point:{
+          radius: 0
+      }
+  },
     maintainAspectRatio: false,
     responsive: true,
     scales: {
       y: {
-        beginAtZero: true
+        beginAtZero: true,
       }
     }
   }
 });
 
 // 2nd right chart-------
-var value = 90;
-var circleDegrees = 290;
-
-
-var myConfig = {
- 	type: "gauge",
- 	globals: {
- 	  fontSize: 25
- 	},
- 	plot:{
- 	  size:'100%',
- 	  valueBox: {
- 	    placement: 'center',
- 	    text:'%v', //default
- 	    fontSize:30,
- 	    // rules:[
-      //   {
- 	    //     rule: '%v < 80',
- 	    //     text: '%v MB'
- 	    //   },
- 	    //   {
- 	    //     rule: '%v >= 80',
- 	    //     text: '%v<br>Threshold<br>reached'
- 	    //   },
-      //   {
- 	    //     rule: '%v >= 100',
- 	    //     text: 'Exhausted'
- 	    //   }
- 	    // ]
- 	  }
- 	},
- 	scaleR:{
-	  aperture:circleDegrees,
-	  minValue:0,
-	  maxValue:100,
-	  step:1,
-	  center:{
-	    visible:false
-	  },
-	  tick:{
-	    visible:false
-	  },
-	  item:{
-      visible: false,
-	  },
-	  ring:{
-	    size:20,
-	    rules:[
-        {
-	        rule:'%v < '+value+'',
-	        backgroundColor:'#3f1473'
-          // backgroundColor: gradient,
-	      }
-	    ]
-	  }
- 	},
-	series : [
-		{
-			values : [value], // starting value
-			backgroundColor:'#9e3568',
-	    indicator:[5,2,5,9,.7],
-	    animation:{  
-        effect:2,
-        method:4,
-        sequence:4,
-        speed: 2000
-     }
-		}
-	]
-};
-
-zingchart.render({ 
-	id : 'myChart', 
-	data : myConfig,
-	height: 150, 
-	width: '100%'
-});
 
 
 
@@ -263,39 +234,50 @@ zingchart.render({
 
 
 
-//3rd chart----------
+//features chart----------
 const ui = document.getElementById('feature-chart');
 
 new Chart(ui, {
   type: 'bar',
-  data: {
-    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-    datasets: [{
-      label: 'Mvx',
-      data: [20, 15, 50, 160, 12, 3],
-      backgroundColor: gradient,
-      borderWidth:0,
-      tension:0.4,
-      fill:true,
-    },{
-      label: 'wcfm',
-      data: [12, 90, 30, 14, 2, 3],
-      backgroundColor: "#ebe7f0",
-      borderWidth:0,
-      tension:0.4,
-      fill:true,
-    }
-  ]
-  },
-  options: {
-    maintainAspectRatio: false,
-    responsive: true,
-    scales: {
-      y: {
-        beginAtZero: true
+    data: {
+      labels: ['A', 'B', 'C', 'D', 'E', 'F','G', 'H', 'I', 'J'],
+      align:"end",
+      datasets: [{
+        label: 'Mvx',
+        data: [20, 15, 50, 16, 12, 30, 6, 12, 23, 42],
+        backgroundColor: gradient2,
+        borderWidth:0,
+        tension:0.4,
+        fill:true,
+      },{
+        label: 'wcfm',
+        data: [12, 9, 30, 14, 20, 43, 5, 14, 21, 32],
+        backgroundColor: "#ebe7f0",
+        borderWidth:0,
+        tension:0.4,
+        fill:true,
       }
-    }
-  }
+    ]
+    },
+
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        },
+        hover: { 
+          mode: null
+        },
+        tooltips: {
+          backgroundColor:"#f9f8fb",
+          titleColor:"#181718",
+          bodyColor:"#181718",
+        },
+    },
+ 
 });
 //3rd right chart----------
 
