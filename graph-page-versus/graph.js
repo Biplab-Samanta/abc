@@ -16,7 +16,6 @@ jQuery(document).ready( function ($) {
     $(".logo:not(#firstgraph-sec)").hide();
     $("#vs-introduction").addClass('active-vstab');
     $(".tab-item:not(#vs-introduction)").removeClass('active-vstab');
-
     
     
     } else if ($(window).scrollTop() < $("#div01").height() +  $("#div02").height() ) { 
@@ -84,12 +83,18 @@ jQuery(document).ready( function ($) {
 
           var defaultposition = $('.active-vstab').position();
           var defaultwidth = $('.active-vstab').height();
-          $(".active-line").css({"top":+ defaultposition.top,"height":defaultwidth * 2});
+          $(".active-line").css({"top":+ defaultposition.top,"height":defaultwidth * 2, "transform":"translate(10px, 10px)"});
+
+          
+
+
 
    	});
 
     //tab funtion---------
+$(function(){
 
+});
 
 
 
@@ -121,7 +126,7 @@ $(function(){
       labels: ['Support', 'Features', 'Reveiw'],
       datasets: [{
         label: 'Mvx',
-        data: [2, 15, 5],
+        data: [12, 15, 5],
         backgroundColor: gradient2,
        borderColor:'#3f1473',
         borderWidth:0,

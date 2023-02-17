@@ -125,12 +125,12 @@
     color: #BDBAC1;
 }
 .tab-item.active-vstab{
-    position: relative;
+    /* position: relative; */
 }
 .active-vstab a{
     color: #181718;
-    transition: 0.2s all ease;
-    font-family: 'Montserrat', sans-serif;
+    transition: 0.3s all ease;
+    padding-left: 0.25rem;
 }
 .active-line {
     position: absolute;
@@ -160,7 +160,7 @@
     background-clip: padding-box !important;
     border-radius: 0 123rem 123rem 0;
     background: linear-gradient(-110deg, rgba(253,253,254,1) 40%, rgba(253,253,254,0.97) 96%, rgba(253,253,254,1) 100%);
-    padding: 5rem 1rem 5rem 2rem;
+    padding: 5rem 3rem 5rem 2rem;
     transition: .4s all ease-in-out;
     position: relative;
 }
@@ -173,6 +173,7 @@ div#vs-introduction, div#vs-features {
 .tab-item {
     padding: 0.277rem 0;
     font-family: 'Montserrat', sans-serif;
+    /* position: absolute; */
 }
 .hide-side-nav{
     transform: translate(-100%);
@@ -203,7 +204,7 @@ a .help-vendor:hover h5{
 }
 .post-card-wrap {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     gap: 1.5rem;
 }
 .profile-card{
