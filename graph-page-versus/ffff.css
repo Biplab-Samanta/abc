@@ -21,3 +21,790 @@
   color: #f7f6f9;
 }
 
+
+
+
+@font-face {
+  font-family: 'mvx-website-font';
+  src:  url('../fonts/mvx-website-font.eot?9dxelh');
+  src:  url('../fonts/mvx-website-font.eot?9dxelh#iefix') format('embedded-opentype'),
+    url('../fonts/mvx-website-font.ttf?9dxelh') format('truetype'),
+    url('../fonts/mvx-website-font.woff?9dxelh') format('woff'),
+    url('../fonts/mvx-website-font.svg?9dxelh#mvx-website-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'mvx-website-font' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}  
+
+.icon-analytics-feature:before {
+  content: "\e900";
+}
+.icon-any-language-feature:before {
+  content: "\e901";
+}
+.icon-auction-marketplace:before {
+  content: "\e902";
+}
+.icon-booking-marketplace:before {
+  content: "\e903";
+}
+.icon-cart:before {
+  content: "\e904";
+}
+.icon-categories-testimonial:before {
+  content: "\e905";
+}
+.icon-down-arrow-nav:before {
+  content: "\e906";
+}
+.icon-geo-location-feature:before {
+  content: "\e907";
+}
+.icon-hover-arrow-feature:before {
+  content: "\e908";
+}
+.icon-link-right-arrow:before {
+  content: "\e909";
+}
+.icon-location-testimonial:before {
+  content: "\e90a";
+}
+.icon-main-support:before {
+  content: "\e90b";
+}
+.icon-more:before {
+  content: "\e90c";
+}
+.icon-multi-dimensional-feature:before {
+  content: "\e90d";
+}
+.icon-multiple-payment-feature:before {
+  content: "\e90e";
+}
+.icon-multiple-vendors-sell:before {
+  content: "\e90f";
+}
+.icon-niche-marketplace:before {
+  content: "\e910";
+}
+.icon-product-testimonial:before {
+  content: "\e911";
+}
+.icon-rental-marketplace:before {
+  content: "\e912";
+}
+.icon-right-mark-price:before {
+  content: "\e913";
+}
+.icon-star:before {
+  content: "\e914";
+}
+.icon-subscription-marketplace:before {
+  content: "\e915";
+}
+.icon-vendor-identity-feature:before {
+  content: "\e916";
+}
+.icon-vendors-testimonial:before {
+  content: "\e917";
+}
+.icon-admin-profile:before {
+  content: "\e918";
+}
+.icon-bank-transfer-accordion:before {
+  content: "\e919";
+}
+.icon-cancel:before {
+  content: "\e91a";
+}
+.icon-date-and-read:before {
+  content: "\e91b";
+}
+.icon-down-arrow:before {
+  content: "\e91c";
+}
+.icon-facebook:before {
+  content: "\e91d";
+}
+.icon-instagram:before {
+  content: "\e91e";
+}
+.icon-last-updated:before {
+  content: "\e91f";
+}
+.icon-linkedin:before {
+  content: "\e920";
+}
+.icon-link-module:before {
+  content: "\e921";
+}
+.icon-link-right-arrow-2:before {
+  content: "\e922";
+}
+.icon-main-featuers:before {
+  content: "\e923";
+}
+.icon-main-modules:before {
+  content: "\e924";
+}
+.icon-next-arrow:before {
+  content: "\e925";
+}
+.icon-no-table:before {
+  content: "\e926";
+}
+.icon-off-accordion:before {
+  content: "\e927";
+}
+.icon-off-password:before {
+  content: "\e928";
+}
+.icon-on-accordion:before {
+  content: "\e929";
+}
+.icon-on-password:before {
+  content: "\e92a";
+}
+.icon-paypal-accordion:before {
+  content: "\e92b";
+}
+.icon-previous-arrow:before {
+  content: "\e92c";
+}
+.icon-published-date:before {
+  content: "\e92d";
+}
+.icon-quote:before {
+  content: "\e92e";
+}
+.icon-refund-policy:before {
+  content: "\e92f";
+}
+.icon-reply:before {
+  content: "\e930";
+}
+.icon-select-checkbox:before {
+  content: "\e931";
+}
+.icon-show-more:before {
+  content: "\e932";
+}
+.icon-stripe-accordion:before {
+  content: "\e933";
+}
+.icon-support-n-updates:before {
+  content: "\e934";
+}
+.icon-twitter:before {
+  content: "\e935";
+}
+.icon-yes-table:before {
+  content: "\e936";
+}
+.icon-map-location:before {
+  content: "\e937";
+}
+.icon-pause:before {
+  content: "\e938";
+}
+.icon-top-arrow:before {
+  content: "\e939";
+}
+.icon-site-price:before {
+  content: "\e93a";
+}
+.icon-modules-price:before {
+  content: "\e93b";
+}
+.icon-support-price:before {
+  content: "\e93c";
+}
+.icon-updates-price:before {
+  content: "\e93d";
+}
+.icon-dot-blog:before {
+  content: "\e93e";
+}
+.icon-left-back:before {
+  content: "\e93f";
+}
+.icon-right-back:before {
+  content: "\e940";
+}
+.icon-hamburger:before {
+  content: "\e941";
+}
+.icon-envelope:before {
+  content: "\e942";
+}
+.icon-approve-feedback:before {
+  content: "\e943";
+}
+.icon-wcmp-version-3-0-beta:before {
+  content: "\e944";
+}
+.icon-wcmp-vendor-vacation:before {
+  content: "\e945";
+}
+.icon-wcmp-vendor-stock-alert:before {
+  content: "\e946";
+}
+.icon-wcmp-vendor-staff:before {
+  content: "\e947";
+}
+.icon-wcmp-vendor-seo-and-analytics:before {
+  content: "\e948";
+}
+.icon-wcmp-vendor-product-import-export:before {
+  content: "\e949";
+}
+.icon-wcmp-vendor-membership:before {
+  content: "\e94a";
+}
+.icon-wcmp-vendor-categorization:before {
+  content: "\e94b";
+}
+.icon-wcmp-stripe-marketplace:before {
+  content: "\e94c";
+}
+.icon-wcmp-pdf-invoice:before {
+  content: "\e94d";
+}
+.icon-wcmp-frontend-product-manager:before {
+  content: "\e94e";
+}
+.icon-wcmp-core:before {
+  content: "\e94f";
+}
+.icon-wcmp-catalog-enquiry:before {
+  content: "\e950";
+}
+.icon-wcmp-advanced-product-types:before {
+  content: "\e951";
+}
+.icon-theme-tannistha:before {
+  content: "\e954";
+}
+.icon-theme-plugin-support:before {
+  content: "\e955";
+}
+.icon-team-contact:before {
+  content: "\e956";
+}
+.icon-submit-requirement:before {
+  content: "\e957";
+}
+.icon-share-quote:before {
+  content: "\e958";
+}
+.icon-quote-approve:before {
+  content: "\e959";
+}
+.icon-multivendorx-pro:before {
+  content: "\e952";
+}
+.icon-multivendorx:before {
+  content: "\e95b";
+}
+.icon-general-marketplace-discussion:before {
+  content: "\e95c";
+}
+.icon-future-ideas:before {
+  content: "\e95d";
+}
+.icon-final-payment:before {
+  content: "\e95e";
+}
+.icon-doller:before {
+  content: "\e95f";
+}
+.icon-affiliate:before {
+  content: "\e953";
+}
+.icon-third-party-support:before {
+  content: "\e95a";
+}
+.icon-store-management:before {
+  content: "\e960";
+}
+.icon-store-components:before {
+  content: "\e961";
+}
+.icon-shipping:before {
+  content: "\e962";
+}
+.icon-registration-form-feature:before {
+  content: "\e963";
+}
+.icon-product-management:before {
+  content: "\e964";
+}
+.icon-payment:before {
+  content: "\e965";
+}
+.icon-order-management:before {
+  content: "\e966";
+}
+.icon-notification:before {
+  content: "\e967";
+}
+.icon-membership:before {
+  content: "\e968";
+}
+.icon-marketplace-types:before {
+  content: "\e969";
+}
+.icon-inventory-management-tool:before {
+  content: "\e96a";
+}
+.icon-import-export:before {
+  content: "\e96b";
+}
+.icon-geo-location:before {
+  content: "\e96c";
+}
+.icon-follow-store:before {
+  content: "\e96d";
+}
+.icon-elementor:before {
+  content: "\e96e";
+}
+.icon-distance-shipping:before {
+  content: "\e96f";
+}
+.icon-country-wise-shipping:before {
+  content: "\e970";
+}
+.icon-commission-management:before {
+  content: "\e971";
+}
+.icon-commission-feature:before {
+  content: "\e972";
+}
+.icon-business-hours:before {
+  content: "\e973";
+}
+.icon-bundle:before {
+  content: "\e974";
+}
+.icon-buddypress-social:before {
+  content: "\e975";
+}
+.icon-booking:before {
+  content: "\e976";
+}
+.icon-auction:before {
+  content: "\e977";
+}
+.icon-analytics:before {
+  content: "\e978";
+}
+.icon-advance-custom-field:before {
+  content: "\e979";
+}
+.icon-generate-marketplace:before {
+  content: "\e97a";
+}
+.icon-grow-marketplace:before {
+  content: "\e97b";
+}
+.icon-build-marketplace:before {
+  content: "\e97c";
+}
+.icon-launch-marketplace:before {
+  content: "\e97d";
+}
+.icon-manage-marketplace:before {
+  content: "\e97e";
+}
+.icon-payment-management-tool:before {
+  content: "\e97f";
+}
+.icon-advertising-options:before {
+  content: "\e980";
+}
+.icon-time-management-tools:before {
+  content: "\e981";
+}
+.icon-marketplace-analytics-tools:before {
+  content: "\e982";
+}
+.icon-cloud-based-system:before {
+  content: "\e983";
+}
+.icon-product-management-tools:before {
+  content: "\e984";
+}
+.icon-uncheck-box:before {
+  content: "\e985";
+}
+.icon-check-box:before {
+  content: "\e986";
+}
+.icon-staff-manager:before {
+  content: "\e987";
+}
+.icon-seo-analytics:before {
+  content: "\e988";
+}
+.icon-rental:before {
+  content: "\e989";
+}
+.icon-product-addon:before {
+  content: "\e98a";
+}
+.icon-paypal-marketplace:before {
+  content: "\e98b";
+}
+.icon-marketplace-membership:before {
+  content: "\e98c";
+}
+.icon-marketplace-analytics:before {
+  content: "\e98d";
+}
+.icon-mangopay:before {
+  content: "\e98e";
+}
+.icon-live-chat:before {
+  content: "\e98f";
+}
+.icon-invoice-packing-slip:before {
+  content: "\e990";
+}
+.icon-seller-analytics:before {
+  content: "\e991";
+}
+.icon-at-home-services:before {
+  content: "\e992";
+}
+.icon-healthcare-professionals:before {
+  content: "\e993";
+}
+.icon-pay-per-contact:before {
+  content: "\e994";
+}
+.icon-hotel-and-lounges:before {
+  content: "\e995";
+}
+.icon-listing-fee:before {
+  content: "\e996";
+}
+.icon-pay-per-action-fee:before {
+  content: "\e997";
+}
+.icon-right-price:before {
+  content: "\e998";
+}
+.icon-sales-commission:before {
+  content: "\e999";
+}
+.icon-salon-and-spa-booking:before {
+  content: "\e99a";
+}
+.icon-social-media-marketing:before {
+  content: "\e99b";
+}
+.icon-restaurants:before {
+  content: "\e99c";
+}
+.icon-transportation-companies:before {
+  content: "\e99d";
+}
+.icon-surprise-offers:before {
+  content: "\e99e";
+}
+.icon-subscription-fee:before {
+  content: "\e99f";
+}
+.icon-mixed-model:before {
+  content: "\e9a0";
+}
+.icon-competition-research:before {
+  content: "\e9a1";
+}
+.icon-antiques:before {
+  content: "\e9a2";
+}
+.icon-artistic-goods:before {
+  content: "\e9a3";
+}
+.icon-auction-types:before {
+  content: "\e9a4";
+}
+.icon-bidding-options:before {
+  content: "\e9a5";
+}
+.icon-collectible-items:before {
+  content: "\e9a6";
+}
+.icon-jewellery:before {
+  content: "\e9a7";
+}
+.icon-electronic-gadgets:before {
+  content: "\e9a8";
+}
+.icon-land-and-property:before {
+  content: "\e9a9";
+}
+.icon-communication-tools:before {
+  content: "\e9aa";
+}
+.icon-fashion-good:before {
+  content: "\e9ab";
+}
+.icon-furnishing-items:before {
+  content: "\e9ac";
+}
+.icon-gaming-supplies:before {
+  content: "\e9ad";
+}
+.icon-handicrafts-and-handmade-goods:before {
+  content: "\e9ae";
+}
+.icon-handloom-fabrics:before {
+  content: "\e9af";
+}
+.icon-inventory-management-tools:before {
+  content: "\e9b0";
+}
+.icon-toys-and-kids-supplies:before {
+  content: "\e9b1";
+}
+.icon-clothing-rentals:before {
+  content: "\e9b2";
+}
+.icon-communication-options:before {
+  content: "\e9b3";
+}
+.icon-house-or-spaces:before {
+  content: "\e9b4";
+}
+.icon-location-management-tools:before {
+  content: "\e9b5";
+}
+.icon-post-sale-management:before {
+  content: "\e9b6";
+}
+.icon-rv-or-camper:before {
+  content: "\e9b7";
+}
+.icon-storage-spaces:before {
+  content: "\e9b8";
+}
+.icon-vehicle-rentals:before {
+  content: "\e9b9";
+}
+.icon-subscription-management:before {
+  content: "\e9ba";
+}
+.icon-subscription-tools:before {
+  content: "\e9bb";
+}
+.icon-wcmp-vendor-live-chat:before {
+  content: "\e9bc";
+}
+.icon-wcmp-mangopay-marketplace:before {
+  content: "\e9bd";
+}
+.icon-update-catalog:before {
+  content: "\e9be";
+}
+.icon--renewal-charge:before {
+  content: "\e9bf";
+}
+.icon-account-details-myaccount:before {
+  content: "\e9c0";
+}
+.icon-address-myaccount:before {
+  content: "\e9c1";
+}
+.icon-any-woocommerce-theme-compatible:before {
+  content: "\e9c2";
+}
+.icon-api-downloads-myaccount:before {
+  content: "\e9c3";
+}
+.icon-api-keys-myaccount:before {
+  content: "\e9c4";
+}
+.icon-category-pyramid-guide:before {
+  content: "\e9c5";
+}
+.icon-contributions-myaccount:before {
+  content: "\e9c6";
+}
+.icon-dashboard-myaccount:before {
+  content: "\e9c7";
+}
+.icon-diverse-store-shipping:before {
+  content: "\e9c8";
+}
+.icon-elementor-supported-widgets:before {
+  content: "\e9c9";
+}
+.icon-flexible-commission-module:before {
+  content: "\e9ca";
+}
+.icon-fronted-dashboard-and-analytics:before {
+  content: "\e9cb";
+}
+.icon-hundreds-of-payment-gateways:before {
+  content: "\e9cc";
+}
+.icon-live-geolocation-supported:before {
+  content: "\e9cd";
+}
+.icon-logout-myaccount:before {
+  content: "\e9ce";
+}
+.icon-money-back-guarantee-catalog:before {
+  content: "\e9cf";
+}
+.icon-multilingual-ready:before {
+  content: "\e9d0";
+}
+.icon-orders-myaccount:before {
+  content: "\e9d1";
+}
+.icon-payment-methods:before {
+  content: "\e9d2";
+}
+.icon-rewards-myaccount:before {
+  content: "\e9d3";
+}
+.icon-signle-product-multi-vendor:before {
+  content: "\e9d4";
+}
+.icon-store-reviews:before {
+  content: "\e9d5";
+}
+.icon-support-catalog:before {
+  content: "\e9d6";
+}
+.icon-support-ticket-myaccount:before {
+  content: "\e9d7";
+}
+.icon-unlimited-lndependent-vendors-stores:before {
+  content: "\e9d8";
+}
+.icon-unlimited-products:before {
+  content: "\e9d9";
+}
+.icon-required-catalog:before {
+  content: "\e9da";
+}
+.icon-woocommerce-table-rate-shipping:before {
+  content: "\e9db";
+}
+.icon-wholesale:before {
+  content: "\e9dc";
+}
+.icon-vendor-vacation:before {
+  content: "\e9dd";
+}
+.icon-stripe-marketplace:before {
+  content: "\e9de";
+}
+.icon-product-options:before {
+  content: "\e9df";
+}
+.icon-twitter-social:before {
+  content: "\e9e0";
+}
+.icon-linkedin-social:before {
+  content: "\e9e1";
+}
+.icon-facebook-social:before {
+  content: "\e9e2";
+}
+.icon-youtube-social:before {
+  content: "\e9e3";
+}
+.icon-wcmp-vendor-frontend-reports:before {
+  content: "\e9e4";
+}
+.icon-vendor-registration-form:before {
+  content: "\e9e5";
+}
+.icon-use-enquiry-cart:before {
+  content: "\e9e6";
+}
+.icon-send-enquiry-about-the-products:before {
+  content: "\e9e7";
+}
+.icon-refund-manager:before {
+  content: "\e9e8";
+}
+.icon-personalised-email-templates:before {
+  content: "\e9e9";
+}
+.icon-personalised-dashboard:before {
+  content: "\e9ea";
+}
+.icon-manage-your-own-product-exclude-list:before {
+  content: "\e9eb";
+}
+.icon-in-built-order-manager:before {
+  content: "\e9ec";
+}
+.icon-fully-customizable-enquiry-form:before {
+  content: "\e9ed";
+}
+.icon-enquiry-status-manager:before {
+  content: "\e9ee";
+}
+.icon-enquiry-inbox:before {
+  content: "\e9ef";
+}
+.icon-enable-catalog-mode:before {
+  content: "\e9f0";
+}
+.icon-disable-add-to-cart:before {
+  content: "\e9f1";
+}
+.icon-communication-via-inbuilt-messaging-system:before {
+  content: "\e9f2";
+}
+.icon-apply-sales-and-catalog-mode-together:before {
+  content: "\e9f3";
+}
+.icon-adjustable-commission-plans:before {
+  content: "\e9f4";
+}
+.icon-pet-subscription-boxes:before {
+  content: "\e9f5";
+}
+.icon-newspaper-subscription:before {
+  content: "\e9f6";
+}
+.icon-coffee-subscription:before {
+  content: "\e9f7";
+}
+.icon-book-subscription:before {
+  content: "\e9f8";
+}
+.icon-beauty-subscription:before {
+  content: "\e9f9";
+}
+.icon-grocery-delivery:before {
+  content: "\e9fa";
+}
+.icon-appointment:before {
+  content: "\e9fb";
+}
+

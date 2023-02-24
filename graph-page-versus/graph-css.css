@@ -197,7 +197,6 @@ div#vs-introduction, div#vs-features {
 }
 a .help-vendor:hover h5{
     color: #3f1473;
-    background-color: #3f147312;
 }
 .help-vendor i {
     color: #795b9d;
@@ -281,7 +280,9 @@ td:has(.profile-image) {
         /* width: 100%; */
     }
   }
-
+  .modal {
+    background: #00000075;
+}
 
 
 
